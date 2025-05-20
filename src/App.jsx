@@ -5,6 +5,7 @@ import Calendar from './pages/Calendar'
 import SignIn from './pages/SignIn'
 import SignUp from './pages/SignUp'
 
+
 function App() {
  
 
@@ -12,9 +13,9 @@ function App() {
     <>
        <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/auth" element={<Calendar />} />
-        <Route path="/dashboard" element={<SignIn />} />
-        <Route path="/create" element={<SignUp />} />
+        <Route path="/calendar" element={<Calendar />} />
+        <Route path="/signin" element={<SignIn />} />
+        <Route path="/signup" element={<SignUp />} />
       </Routes>
     </>
   )
