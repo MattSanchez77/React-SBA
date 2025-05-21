@@ -11,6 +11,9 @@ export default function Nav(){
           <li>
             <Link to="/calendar">Calendar</Link>
           </li>
+          <li>
+            <Link to="/about">About</Link>
+          </li>
         </ul>
       </nav>
     );
