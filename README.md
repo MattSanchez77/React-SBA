@@ -13,11 +13,7 @@ A React web application that displays liturgical calendar information based on u
 
 ## 💡 Project Overview
 
-This app allows you to follow the Liturgical calendar by date. 
-(Write a 2–3 sentence summary explaining what this app does. Try answering these questions: What does the app do? Who is it for? What problem does it solve or what value does it provide?)
-
-## 📁 File Structure
-
+This app provides users with daily insights from the liturgical calendar — a centuries-old structure for marking time through seasons, feast days, and celebrations. By selecting a date, users can explore what the Church observes on that day. The goal is to offer a quiet, steady alternative to the rapidly changing rhythm of the modern secular calendar.
 
 ## 🧭 Features
 

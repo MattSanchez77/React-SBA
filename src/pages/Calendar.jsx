@@ -20,39 +20,40 @@ export default function Calendar() {
 
     useEffect(() => {
         if (!selectedDate) return; // wait until a date is chosen
-      
+
         const [year, month, day] = selectedDate.split('-');
-      
+
         // Build the URL using year/month/day
-        const url = `https://calapi.inadiutorium.cz/api/v0/en/calendars/general-en/${year}/${month}/${day}`;
-      
+        const url = `http://calapi.inadiutorium.cz/api/v0/en/calendars/general-en/${year}/${month}/${day}`;
+
         // Fetch data
         axios.get(url)
-          .then((res) => {
-            setLiturgicalData(res.data);
-          })
-          .catch((err) => {
-            console.error('Date-specific API error:', err);
-          });
-      
-      }, [selectedDate]);
+            .then((res) => {
+                setLiturgicalData(res.data);
+            })
+            .catch((err) => {
+                console.error('Date-specific API error:', err);
+            });
+
+    }, [selectedDate]);
 
 
 
-      return (
+    return (
         <>
-          <input
-            type="date"
-            value={selectedDate}
-            onChange={(e) => setSelectedDate(e.target.value)}
-          />
-      
-          {liturgicalData && (
-            <>
-              <h2>{liturgicalData.celebration.title}</h2>
-              <p>Season: {liturgicalData.season.name}</p>
-            </>
-          )}
+            <input
+                type="date"
+                value={selectedDate}
+                onChange={(e) => setSelectedDate(e.target.value)}
+            />
+
+            {liturgicalData && (
+                <>
+                    <h2>Season: {liturgicalData.season}</h2>
+                    <h2>{liturgicalData.celebrations[0]?.title}</h2>
+                    <p>Color: {liturgicalData.celebrations[0]?.colour}</p>
+                </>
+            )}
         </>
-      );
+    );
 }
