@@ -1,21 +1,11 @@
 import { useState } from "react";
 import { useEffect } from "react";
 import axios from "axios";
-import '../utilities/Calendar.css';
+
 
 export default function Calendar() {
     const [liturgicalData, setLiturgicalData] = useState(null);
 
-    // useEffect(() => {
-    //     axios.get('http://calapi.inadiutorium.cz/api/v0/en/calendars/general-en/${year}/${month}/${day}')
-    //         .then((res) => {
-    //             console.log(res.data); // peek at the structure
-    //             setLiturgicalData(res.data);
-    //         })
-    //         .catch((err) => {
-    //             console.error('API error:', err);
-    //         });
-    // }, []);
 
     const [selectedDate, setSelectedDate] = useState('');
 
