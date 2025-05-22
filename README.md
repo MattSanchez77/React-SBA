@@ -1,12 +1,27 @@
-# React + Vite
+# Liturgical Calendar App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React web application that displays liturgical calendar information based on user-selected dates.
 
-Currently, two official plugins are available:
+## 🚀 Technologies Used
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- React
+- JavaScript (ES6+)
+- HTML5 & CSS3
+- Axios
+- React Router DOM
+- [Calapi API](https://calapi.inadiutorium.cz/)
 
-## Expanding the ESLint configuration
+## 💡 Project Overview
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+This app allows you to follow the Liturgical calendar by date. 
+(Write a 2–3 sentence summary explaining what this app does. Try answering these questions: What does the app do? Who is it for? What problem does it solve or what value does it provide?)
+
+## 📁 File Structure
+
+
+## 🧭 Features
+
+- Date picker to choose any day of the year
+- Displays liturgical celebration and season for that date
+- Navigation across Home, Calendar, and About pages
+- Responsive layout (works on mobile and desktop)

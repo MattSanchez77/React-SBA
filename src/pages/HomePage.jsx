@@ -7,7 +7,7 @@ export default function HomePage(){
     const [liturgicalData, setLiturgicalData] = useState(null);
 
     useEffect(() => {
-        axios.get('https://calapi.inadiutorium.cz/api/v0/en/calendars/general-en/today')
+        axios.get('http://calapi.inadiutorium.cz/api/v0/en/calendars/general-en/today')
           .then((res) => {
             console.log(res.data); // peek at the structure
             setLiturgicalData(res.data);
